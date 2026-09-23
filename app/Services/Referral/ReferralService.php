@@ -31,6 +31,6 @@ class ReferralService
     {
         $percent = (int) config('referral.percent');
 
-        return (int) round($paymentAmount * $percent);
+        return (int) round($paymentAmount * $percent / 100);
     }
 }
